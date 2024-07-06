@@ -1,0 +1,24 @@
+<html>
+    <body style="background-color: #87CEEB; padding: 50px;" >
+
+        <center>
+
+            <h1>2 vars K-Means Clustering Input Data</h1>
+            <form action="{{url_for('lab7')}}" method="POST">
+                
+                {% for subject in range(num_subjects) %}
+                Subject {{ subject + 1 }} - A: <input type="number" name="a_{{ cluster }}_{{ subject }}" required><br>
+                Subject {{ subject + 1 }} - B: <input type="number" name="b_{{ cluster }}_{{ subject }}" required><br>
+                {% endfor %}
+               
+                <input type="submit" value="Process Data">
+            </form>
+
+        <br><br>
+        <a href='/'>Go Home Page</a>
+
+        
+    </center>
+
+    </body>
+</html>

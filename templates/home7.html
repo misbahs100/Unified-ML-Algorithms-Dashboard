@@ -1,0 +1,36 @@
+<html>
+    <body style="background-color: #87CEEB; padding: 50px;" >
+
+        <center>
+
+        <h1> Lab 7: <br><span style="color: purple;">K-Means Clustering Algorithm</span> for Two Variable Data</h1><br>
+        
+        
+        <form method="POST", action="{{url_for('lab7')}}">
+            <b>Number of Cluster: <input type="number", name="cluster-num"></b><br><br><br><br>
+
+            <b> Subject 1:  <input type="number", name="1a", step=".01", placeholder="value for A"/> <input type="number", name="1b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 2:  <input type="number", name="2a", step=".01", placeholder="value for A"/> <input type="number", name="2b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 3:  <input type="number", name="3a", step=".01", placeholder="value for A"/> <input type="number", name="3b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 4:  <input type="number", name="4a", step=".01", placeholder="value for A"/> <input type="number", name="4b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 5:  <input type="number", name="5a", step=".01", placeholder="value for A"/> <input type="number", name="5b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 6:  <input type="number", name="6a", step=".01", placeholder="value for A"/> <input type="number", name="6b", step=".01", placeholder="value for B"/><br><br>
+            <b> Subject 7:  <input type="number", name="7a", step=".01", placeholder="value for A"/> <input type="number", name="7b", step=".01", placeholder="value for B"/><br><br>
+
+           
+            <input type="submit" , value='predict the clusters!' >
+        </form>
+        <!-- <form action="{{url_for('lab7')}}" method="POST">
+            Number of Clusters (k): <input type="number" name="k" required><br>
+            Number of Subjects: <input type="number" name="num_subjects" required><br>
+            <input type="submit" value="Submit">
+        </form> -->
+
+        <br><br>
+        <a href='/'>Go Home Page</a>
+
+        
+    </center>
+
+    </body>
+</html>

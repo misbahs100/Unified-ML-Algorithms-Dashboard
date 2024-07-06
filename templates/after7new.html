@@ -1,0 +1,33 @@
+<html>
+
+<body style="background-color: #a3cfb4; padding: 50px;">
+
+    <center>
+
+        <h1>K-Means Clustering Results</h1>
+        <h2>Clusters:</h2>
+        <ul>
+            {% for cluster in range(k) %}
+            <li>Cluster {{ cluster + 1 }}:
+                <ul>
+                    {% for i in range(len(cluster_assignments)) %}
+                    {% if cluster_assignments[i] == cluster %}
+                    <li>Subject {{ i + 1 }}</li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h2>Cluster Plot:</h2>
+        <img src="{{ plot_filename }}" alt="Cluster Plot">
+
+        <br><br>
+        <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>

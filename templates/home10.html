@@ -1,0 +1,30 @@
+<html>
+
+<body style="background-color: #87CEEB; padding: 50px;">
+
+    <center>
+
+        <h1> Lab-10: <br> T-Shirt Size Prediction using <span style="color: purple;">K-Nearest Neighbors (KNN) Algorithm</span>  </h1><br>
+
+
+        <form method="POST" , action="{{url_for('lab10')}}">
+            Height (cm): <input type="number" name="height" required><br><br>
+            Weight (kg): <input type="number" name="weight" required><br><br>
+            K (3 or 5): <input type="number" name="k" required><br><br>
+            Distance Metric:
+            <select name="distance">
+                <option value="euclidean">Euclidean</option>
+                <option value="manhattan">Manhattan</option>
+            </select><br><br><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        <br><br>
+        <a href='/'>Go Home Page</a>
+
+
+    </center>
+
+</body>
+
+</html>

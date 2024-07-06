@@ -1,0 +1,32 @@
+<html>
+    <body style="background-color: #87CEEB; padding: 50px;" >
+
+        <center>
+
+        <h1> Lab 8: <br><span style="color: purple;"> K-Means Algorithm </span> for Students' CGPA</h1><br>
+        
+        
+        <form method="POST", action="{{url_for('lab8')}}">
+            <b> Number of Clusters :  <input type="number", name="k", placeholder="Number of Cluster"/><br><br>
+
+                <br><br>
+           <b> Student 1 CGPA :  <input type="number", name="a", step=".01", placeholder="student 1"/><br><br>
+           <b> Student 2 CGPA :  <input type="number", name='b', step=".01", placeholder="student 2"> <br><br>
+           <b> Student 3 CGPA :  <input type="number", name='c', step=".01", placeholder="student 3"> <br><br>
+           <b> Student 4 CGPA :  <input type="number", name='d', step=".01", placeholder="student 4"> <br><br>
+           <b> Student 5 CGPA :  <input type="number", name='e', step=".01", placeholder="student 5"> <br><br>
+           <b> Student 6 CGPA :  <input type="number", name='f', step=".01", placeholder="student 6"> <br><br>
+            <!-- Second value :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            Third value :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            Fourth value : <input type="text", name='d', placeholder="enter 4"> <br><br><br></b> -->
+            <input type="submit" , value='predict the clusters!' >
+        </form>
+
+        <br><br>
+        <a href='/'>Go Home Page</a> 
+
+        
+    </center>
+
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+
+<body style="background-color: #87CEEB; padding: 50px;">
+
+    <center>
+
+        <h1> Lab-1: <br> <span style="color: purple;">Perceptron Learning Algorithm</span> for Fruit Classification
+        </h1><br>
+
+        <form method="POST" , action="{{url_for('lab1')}}">
+            Shape (1 = Round, -1 = Eliptical): <input type="number" name="shape" required><br><br>
+            Texture (1 = Smooth, -1 = Rough): <input type="number" name="texture" required><br><br>
+            Weight (1 = More than one, -1 = Less than One): <input type="number" name="weight" required><br><br><br>
+            <input type="submit" value="Predict">
+        </form>
+
+        <br><br>
+        <a href='/'>Go Home Page</a>
+
+
+    </center>
+
+</body>
+
+</html>

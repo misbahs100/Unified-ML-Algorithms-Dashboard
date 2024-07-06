@@ -1,0 +1,28 @@
+<html>
+
+<body style="background-color: #a3cfb4; padding: 50px;">
+
+    <center>
+
+        <h1> {{k}} CLUSTERS : </h1>
+        <br>
+        {% for cluster_index in range(1, k + 1) %}
+        <h2>Cluster {{ cluster_index }}:</h2>
+        <ul>
+            {% for subject in clusters[cluster_index - 1] %}
+            <p>{{ subject }}</p>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+
+        <h2>Cluster Plot:</h2>
+        <img src="{{ plot_filename }}" alt="Cluster Plot">
+
+        <br><br>
+        <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
